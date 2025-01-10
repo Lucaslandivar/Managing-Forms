@@ -9,3 +9,4 @@ import { LoginComponent } from './auth/login/login.component';
   imports: [LoginComponent],
 })
 export class AppComponent {}
+console.log('hola');

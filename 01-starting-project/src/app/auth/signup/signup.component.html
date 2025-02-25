@@ -7,7 +7,7 @@
     <input id="email" type="email" name="email" formControlName="email" />
   </div>
 
-  <div class="control-row">
+  <div class="control-row" formGroupName="passwords">
     <div class="control">
       <label for="password">Password</label>
       <input
@@ -18,7 +18,7 @@
       />
     </div>
 
-    <div class="control">
+    <div class="control" formGroupName="passwords">
       <label for="confirm-password">Confirm Password</label>
       <input
         id="confirm-password"
@@ -57,7 +57,7 @@
     <fieldset>
       <legend>Your Address</legend>
 
-      <div class="control-row">
+      <div class="control-row" formGroupName="address">
         <div class="control">
           <label for="street">Street</label>
           <input
@@ -68,7 +68,7 @@
           />
         </div>
 
-        <div class="control">
+        <div class="control" formGroupName="address">
           <label for="number">Number</label>
           <input
             type="text"
@@ -79,7 +79,7 @@
         </div>
       </div>
 
-      <div class="control-row">
+      <div class="control-row" formGroupName="address">
         <div class="control">
           <label for="postal-code">Postal Code</label>
           <input
@@ -90,7 +90,7 @@
           />
         </div>
 
-        <div class="control">
+        <div class="control" formGroupName="address">
           <label for="city">City</label>
           <input type="text" id="city" name="city" formControlName="city" />
         </div>
